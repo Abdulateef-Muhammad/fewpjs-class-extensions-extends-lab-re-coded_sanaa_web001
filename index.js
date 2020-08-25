@@ -18,7 +18,7 @@ class Triangle extends Polygon {
   get isValid() {
     return this.sides.find( function(num, i) {
       let length = this.sides.length;
-      return num + this.sides[ length - 2 ] > this.sides[length - 1]
+      return num + this.sides[ length - 2 ] > this.sides[length - 1];
     }.bind(this));
   }
 }
