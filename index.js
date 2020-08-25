@@ -14,7 +14,7 @@ class Polygon {
 }
 
 class Triangle extends Polygon {
-  
+
   get isValid() {
     return this.sides.find( function(num, i) {
       let length = this.sides.length;
