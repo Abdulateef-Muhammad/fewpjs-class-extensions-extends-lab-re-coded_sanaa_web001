@@ -26,8 +26,8 @@ class Triangle extends Polygon {
 }
 
 class  Square extends Polygon {
-  constructor() {
-
+  constructor(sides) {
+    this.sides = sides;
   }
 
   get isValid() {
