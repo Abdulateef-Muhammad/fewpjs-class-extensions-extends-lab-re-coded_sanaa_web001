@@ -36,5 +36,5 @@ class  Square extends Polygon {
   }
 }
 
-let square = new Square([3, 3, 3, 3]);
+let square = new Square([3, 3, 4, 3]);
 console.log(square.isValid);
