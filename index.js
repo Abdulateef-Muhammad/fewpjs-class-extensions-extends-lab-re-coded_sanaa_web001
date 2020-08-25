@@ -26,9 +26,9 @@ class Triangle extends Polygon {
 }
 
 class  Square extends Polygon {
-  constructor(sides) {
-    this.sides = sides;
-  }
+  // constructor(sides) {
+  //   this.sides = sides;
+  // }
 
   get isValid() {
     let sideLength = this.sides[0];
