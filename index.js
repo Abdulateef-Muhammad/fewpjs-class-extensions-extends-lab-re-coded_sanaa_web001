@@ -27,7 +27,7 @@ class  Square extends Polygon {
 
   get isValid() {
     let sideLength = this.sides[0];
-    return this.sides.reduce( side => side === sideLength);
+    return this.sides.reduce( (valid, num) => side === num, sideLength);
   }
 
   get area() {
