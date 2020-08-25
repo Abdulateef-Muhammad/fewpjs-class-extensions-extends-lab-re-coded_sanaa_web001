@@ -17,7 +17,7 @@ class Triangle extends Polygon {
 
   get isValid() {
       return
-        this.sides.find(
+        this.sides.map(
           function(num , index) {
             console.log(num, index);
           }
