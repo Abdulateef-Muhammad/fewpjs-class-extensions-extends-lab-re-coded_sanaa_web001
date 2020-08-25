@@ -34,3 +34,6 @@ class  Square extends Polygon {
     return this.sides[0] * this.sides[0];
   }
 }
+
+let square = new Square([3, 3, 3, 3]);
+console.log(square.isValid);
