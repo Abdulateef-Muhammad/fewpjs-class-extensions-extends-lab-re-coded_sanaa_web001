@@ -16,13 +16,14 @@ class Polygon {
 class Triangle extends Polygon {
 
   get isValid() {
-    return this.sides.find( function(num, i) {
-      let length = this.sides.length;
-      return num + this.sides[ length - 2 ] > this.sides[length - 1];
-    }.bind(this));
-  }
+      return 
+        this.sides.find(
+          function(num , index) {
+            console.log(num, index);
+          }
+        );
 }
-
+}
 class  Square extends Polygon {
 
   get isValid() {
@@ -36,5 +37,5 @@ class  Square extends Polygon {
   }
 }
 
-let square = new Square([3, 3, 3, 3]);
-console.log(square.isValid);
+let triangle = new Triangle([3, 3, 3]);
+console.log(triangle.isValid);
