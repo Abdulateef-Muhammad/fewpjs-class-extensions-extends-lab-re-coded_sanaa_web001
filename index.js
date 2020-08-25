@@ -14,7 +14,30 @@ class Polygon {
 }
 
 class Triangle extends Polygon {
-  constructor() {
-
+  constructor(sides) {
+    this.sides = sides;
+  }
+  get isValid() {
+    return this.sides.find( function(num, i) {
+      let length = this.sides.length;
+      return num + this.sides[ length - 2 ] > this.sides[length - 1]
+    }.bind(this));
   }
 }
+
+class  Square extends Polygon {
+  constructor() {
+    
+  }
+
+  get isValid() {
+    let sideLength = this.sides[0];
+    return this.sides.find( side => side === sideLength);
+  }
+
+  get area() {
+    return this.sides[0] * this.sides[0];
+  }
+}
+
+
